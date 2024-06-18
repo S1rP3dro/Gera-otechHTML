@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CardapioDigital</title>
     <link rel="stylesheet" href="styles.css">
-    
+    <link rel="shortcut icon" href="imgs/baseProjetoCardapio-20240617T165232Z-001/baseProjetoCardapio/imagens/5787016.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 
 
@@ -26,9 +28,35 @@
             <li>
                 <a href="#bebidas">Bebidas</a>
             </li>
+            <li>
+                <a href="#carrinho" data-bs-toggle="offcanvas" role="button" aria-controls="offcanvasExample">Carrinho</a>
+            </li>
         </ul>
     </nav>
     </header>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="carrinho" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+          </div>
+          <div class="card text-dark" style="width: 18rem;">
+            <img src="imgs/baseProjetoCardapio-20240617T165232Z-001/baseProjetoCardapio/imagens/burger01.png" class="card-img-top" alt="AgnusBurguer">
+            <div class="card-body">
+              <h5 class="card-title">BURGUER</h5>
+              <p class=" text-align card-text">Compre aqui seu Agnus Burguer</p>
+              <a href="#" class="btn btn-primary">+</a>
+              <a href="#" class="btn btn-primary">-</a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
 
     <h1>CARDÁPIO DIGITAL</h1>
     <h2 id="hamburguer">Hamburgueres</h2>

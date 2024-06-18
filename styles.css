@@ -14,7 +14,7 @@ body{
 
 
 header{
-    background-color: #1E1F22;
+    background-color:#1E1F22 ;
     text-align: center;
     padding: 15px;
     
@@ -45,14 +45,19 @@ li{
 }
 
 h2{
-    color: yellow;
+    color: #ffae00;
     font-size: 25px;
     text-transform:uppercase;
 }
 
+
+img{
+    width: 400px;
+}
+
 .boxProduto{
 background-color:rgb(57, 57, 57) ;
-width: 900px;
+width: 850px;
 border-radius: 10px;
 margin: auto;
 }
@@ -73,7 +78,14 @@ margin: auto;
     padding-top: 20px;
 }
 
+.btn{
+    background-color: #ffae00;
 
+    
+}
 
+p{
+    display: inline-block;
+}
 
 
