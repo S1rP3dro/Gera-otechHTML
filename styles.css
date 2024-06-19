@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+PL:wght@100..400&display=swap');
+
 
 *{
     padding: 0;
@@ -6,12 +8,26 @@
     font-family: sans-serif;
 }
 
+:root{
+    --corBotoesH2Texto: #FFAE00;
+    --arredondamentoBordas: 10px;
+    --minhaFonte: "Playwrite PL", cursive;
+}
+
 
 body{
     background-image: url(imgs/baseProjetoCardapio-20240617T165232Z-001/baseProjetoCardapio/imagens/bg.png);
     text-align: center;
 }
 
+nav a{
+    color: white;
+    margin: 0px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
 
 header{
     background-color:#1E1F22 ;
@@ -78,14 +94,22 @@ margin: auto;
     padding-top: 20px;
 }
 
-.btn{
-    background-color: #ffae00;
-
-    
+button{
+    background-color: var(--corBotoesH2Texto);
+    padding: 15px;
+    border: none ;
+    border-radius: var(--arredondamentoBordas);
+    width: 150px;
+    cursor: pointer;
 }
 
 p{
     display: inline-block;
+}
+
+
+h1, h2, h3, button{
+    margin: 10px 0px;
 }
 
 

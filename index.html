@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CardapioDigital</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="imgs/baseProjetoCardapio-20240617T165232Z-001/baseProjetoCardapio/imagens/5787016.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="shortcut icon"
+        href="imgs/baseProjetoCardapio-20240617T165232Z-001/baseProjetoCardapio/imagens/5787016.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </head>
 
 
@@ -15,47 +20,111 @@
 
 
     <header>
-      
-        <img class="logo" src="imgs/baseProjetoCardapio-20240617T165232Z-001/baseProjetoCardapio/imagens/logo.png" alt="logo">
-    <nav>
-        <ul>
-            <li>
-                <a href="#burguer">Burguers</a>
-            </li>
-            <li>
-                <a href="#acompanhamentos">Acompanhamentos</a>
-            </li>
-            <li>
-                <a href="#bebidas">Bebidas</a>
-            </li>
-            <li>
-                <a href="#carrinho" data-bs-toggle="offcanvas" role="button" aria-controls="offcanvasExample">Carrinho</a>
-            </li>
-        </ul>
-    </nav>
+
+        <img class="logo" src="imgs/baseProjetoCardapio-20240617T165232Z-001/baseProjetoCardapio/imagens/logo.png"
+            alt="logo">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#burguer">Burguers</a>
+                </li>
+                <li>
+                    <a href="#acompanhamentos">Acompanhamentos</a>
+                </li>
+                <li>
+                    <a href="#bebidas">Bebidas</a>
+                </li>
+                <li>
+                    <a href="#carrinho" data-bs-toggle="offcanvas" role="button"
+                        aria-controls="offcanvasExample">Carrinho</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <div class="offcanvas offcanvas-start" tabindex="-1" id="carrinho" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Burguers</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body">
-          <div>
-            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-          </div>
-          <div class="card text-dark" style="width: 18rem;">
-            <img src="imgs/baseProjetoCardapio-20240617T165232Z-001/baseProjetoCardapio/imagens/burger01.png" class="card-img-top" alt="AgnusBurguer">
-            <div class="card-body">
-              <h5 class="card-title">BURGUER</h5>
-              <p class=" text-align card-text">Compre aqui seu Agnus Burguer</p>
-              <a href="#" class="btn btn-primary">+</a>
-              <a href="#" class="btn btn-primary">-</a>
-              
+        <div class="offcanvas-bodys">
+            <h2>Meu Carrinho</h2>
+
+            <!--Carrinho de Hamburguer-->
+            <div>
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="imgs/baseProjetoCardapio-20240617T165232Z-001/baseProjetoCardapio/imagens/burger01.png "
+                                class="img-fluid rounded-start" alt="Agnus burguer">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body text-start">
+                                <h5 class="text-dark card-title">Clássico Angus burger</h5>
+                                <h6 class="card-text text-dark">Total: R$22,50</h6>
+                                <div class="d-flex">
+                                    <button class="btn-sm">+</button>
+                                    <input value="1" class="w-75 mx-3" type="number">
+                                    <button class="btn-sm">-</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Carrinho de acompanhamento-->
+                <div>
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="imgs/baseProjetoCardapio-20240617T165232Z-001/baseProjetoCardapio/imagens/acomp01.png "
+                                    class="img-fluid rounded-start" alt="Fritas">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body text-start">
+                                    <h5 class="text-dark card-title">Fritas</h5>
+                                    <h6 class="card-text text-dark">Total: R$15,00</h6>
+                                    <div class="d-flex">
+                                        <button class="btn-sm">+</button>
+                                        <input class="w-75 mx-3" type="number">
+                                        <button class="btn-sm">-</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                <!--Carrinho de bebida-->
+                    <div>
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="imgs/baseProjetoCardapio-20240617T165232Z-001/baseProjetoCardapio/imagens/bebida01.png "
+                                        class=" width:250px; img-fluid rounded-start" alt="coca-cola">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body text-start">
+                                        <h5 class="text-dark card-title">Coca-Cola</h5>
+                                        <h6 class="card-text text-dark">Total: R$5,00</h6>
+                                        <div class="d-flex">
+                                            <button class="btn-sm">+</button>
+                                            <input class="w-75 mx-3" type="number">
+                                            <button class="btn-sm">-</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
 
 
     <h1>CARDÁPIO DIGITAL</h1>
@@ -64,83 +133,97 @@
 
     <div class="boxProduto">
         <div class="boxImagem">
-            <img src="imgs/baseProjetoCardapio-20240617T165232Z-001/baseProjetoCardapio/imagens/burger01.png" alt="Clássico Anguns Burguer" class="imagemProduto">
+            <img src="imgs/baseProjetoCardapio-20240617T165232Z-001/baseProjetoCardapio/imagens/burger01.png"
+                alt="Clássico Anguns Burguer" class="imagemProduto">
 
         </div>
         <div class="boxTexto">
-            <h3>Clássico Agnus Burger -   <strong>R$22,50</strong></h3>
+            <h3>Clássico Agnus Burger - <strong>R$22,50</strong></h3>
             <p>
-             Delicie-se com o nosso Hambúrguer Clássico, feito com um suculento hambúrguer de carne angus, queijo derretido, alface crocante, tomate fresco e um toque especial do nosso molho secreto. Perfeito para saciar sua fome!
+                Delicie-se com o nosso Hambúrguer Clássico, feito com um suculento hambúrguer de carne angus, queijo
+                derretido, alface crocante, tomate fresco e um toque especial do nosso molho secreto. Perfeito para
+                saciar sua fome!
             </p>
             <button class="btn">Pedir</button>
         </div>
     </div>
-        <br>
-        <div class="boxProduto">
-            <div class="boxImagem">
-                <img src="imgs/baseProjetoCardapio-20240617T165232Z-001/baseProjetoCardapio/imagens/burger02.png" alt="Gourmet Burguer">
+    <br>
+    <div class="boxProduto">
+        <div class="boxImagem">
+            <img src="imgs/baseProjetoCardapio-20240617T165232Z-001/baseProjetoCardapio/imagens/burger02.png"
+                alt="Gourmet Burguer">
 
-            </div>
-            <div class="boxTexto">
-                <h3>Gourmet Burguer -    <strong>R$35,00</strong></h3>
-                <p>O nosso Hambúrguer Gourmet, preparado com um suculento hambúrguer de carne nobre, queijo derretido, cebola caramelizada e baccon. Uma escolha irresistível!</p>
-            </div>
         </div>
-        <button class="btn">Pedir</button>
-        <br>
-        <div class="boxProduto">
-            <div class="boxImagem">
-                <img src="imgs/baseProjetoCardapio-20240617T165232Z-001/baseProjetoCardapio/imagens/burger03.png" alt="Defumado BBQ Burguer">
+        <div class="boxTexto">
+            <h3>Gourmet Burguer - <strong>R$35,00</strong></h3>
+            <p>O nosso Hambúrguer Gourmet, preparado com um suculento hambúrguer de carne nobre, queijo derretido,
+                cebola caramelizada e baccon. Uma escolha irresistível!</p>
+        </div>
+    </div>
+    <button class="btn">Pedir</button>
+    <br>
+    <div class="boxProduto">
+        <div class="boxImagem">
+            <img src="imgs/baseProjetoCardapio-20240617T165232Z-001/baseProjetoCardapio/imagens/burger03.png"
+                alt="Defumado BBQ Burguer">
 
-            </div>
-            <div class="boxTexto">
-                <h3>Defumado BBQ Burguer -    <strong>R$29,00</strong></h3>
-                <p>Deixe-se envolver pelo sabor defumado do nosso Hambúrguer BBQ, uma deliciosa combinação de hambúrguer de carne suculenta, queijo cheddar derretido, cebola caramelizada e salada verde.</p>
-            </div>
         </div>
-        <button class="btn">Pedir</button>
-        <br>
-        <h2 id="acompanhamentos">ACOMPANHAMENTOS</h2>
-        <div class="boxProduto">
-            <div class="boxImagem">
-                <img src="imgs/baseProjetoCardapio-20240617T165232Z-001/baseProjetoCardapio/imagens/acomp01.png" alt="Fritas">
-            </div>
-            <div class="boxTexto"><h3>Fritas - R$15,00</h3>
+        <div class="boxTexto">
+            <h3>Defumado BBQ Burguer - <strong>R$29,00</strong></h3>
+            <p>Deixe-se envolver pelo sabor defumado do nosso Hambúrguer BBQ, uma deliciosa combinação de hambúrguer de
+                carne suculenta, queijo cheddar derretido, cebola caramelizada e salada verde.</p>
+        </div>
+    </div>
+    <button class="btn">Pedir</button>
+    <br>
+    <h2 id="acompanhamentos">ACOMPANHAMENTOS</h2>
+    <div class="boxProduto">
+        <div class="boxImagem">
+            <img src="imgs/baseProjetoCardapio-20240617T165232Z-001/baseProjetoCardapio/imagens/acomp01.png"
+                alt="Fritas">
+        </div>
+        <div class="boxTexto">
+            <h3>Fritas - R$15,00</h3>
             <p>
-                Nossas batatas fritas são o acompanhamento perfeito para qualquer refeição! Cortadas em palitos e fritas até ficarem douradas e crocantes por fora, e macias por dentro, elas são irresistíveis em cada mordida.
+                Nossas batatas fritas são o acompanhamento perfeito para qualquer refeição! Cortadas em palitos e fritas
+                até ficarem douradas e crocantes por fora, e macias por dentro, elas são irresistíveis em cada mordida.
             </p>
             <button class="btn">Pedir</button>
         </div>
-        </div>
-        <br>
+    </div>
+    <br>
 
-        <h2 id="bebidas">BEBIDAS</h2>
-        <div class="boxProduto">
-            <div class="boxImagem boxBebida">
-                <img src="imgs/baseProjetoCardapio-20240617T165232Z-001/baseProjetoCardapio/imagens/bebida01.png" alt="Coca-Cola">
+    <h2 id="bebidas">BEBIDAS</h2>
+    <div class="boxProduto">
+        <div class="boxImagem boxBebida">
+            <img src="imgs/baseProjetoCardapio-20240617T165232Z-001/baseProjetoCardapio/imagens/bebida01.png"
+                alt="Coca-Cola">
 
-            </div>
-                <div class="boxTexto boxBebida">
-                    <h3>Coca Cola - R$5,00</h3>
-                    <p>
-                        Refresque-se com a clássica Coca-Cola gelada, uma bebida que encanta paladares há décadas. Com seu sabor único e inconfundível para acompanhar seu hambúrguer ou batatas fritas.
-                    </p>
-                    <button class="btn">Pedir</button>
-                </div>
         </div>
-        <br>
-        <div class="boxProduto">
-            <div class="boxImagem">
-                <img src="imgs/baseProjetoCardapio-20240617T165232Z-001/baseProjetoCardapio/imagens/bebida02.png" alt="">
-            </div>
-            <div class="boxTexto">
-                <h3>Sprite - R$5,00</h3>
-                <p>
-                    Revitalize seus sentidos com a refrescante Sprite, uma bebida cítrica e efervescente que desperta os sentidos e eleva o seu ânimo para acompanhar seu hambúrguer ou batatas fritas.
-                </p>
-                <button class="btn">Pedir</button>
-            </div>
+        <div class="boxTexto boxBebida">
+            <h3>Coca Cola - R$5,00</h3>
+            <p>
+                Refresque-se com a clássica Coca-Cola gelada, uma bebida que encanta paladares há décadas. Com seu sabor
+                único e inconfundível para acompanhar seu hambúrguer ou batatas fritas.
+            </p>
+            <button class="btn">Pedir</button>
         </div>
-        <br>
+    </div>
+    <br>
+    <div class="boxProduto">
+        <div class="boxImagem">
+            <img src="imgs/baseProjetoCardapio-20240617T165232Z-001/baseProjetoCardapio/imagens/bebida02.png" alt="">
+        </div>
+        <div class="boxTexto">
+            <h3>Sprite - R$5,00</h3>
+            <p>
+                Revitalize seus sentidos com a refrescante Sprite, uma bebida cítrica e efervescente que desperta os
+                sentidos e eleva o seu ânimo para acompanhar seu hambúrguer ou batatas fritas.
+            </p>
+            <button class="btn">Pedir</button>
+        </div>
+    </div>
+    <br>
 </body>
+
 </html>
