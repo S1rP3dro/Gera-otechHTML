@@ -72,26 +72,22 @@ img{
 }
 
 .boxProduto{
-background-color:rgb(57, 57, 57) ;
-width: 850px;
-border-radius: 10px;
-margin: auto;
-}
+    display: flex;
+    background-color: rgba(37, 37, 37, 0.8);
+    width: 850px;
+    margin: 0px auto;
+    border-radius: var(--arredondamentoBordas); 
+    vertical-align: center;
 
-.boxImagem{
-    width:400px;
+}
+.boxImagem, .boxTexto{
     display: inline-block;
     vertical-align: middle;
 }
 
 .boxTexto{
-    
-    display: inline-block;
+    text-align: start;
     width: 400px;
-    height: 200px;
-    margin: 10px;
-    vertical-align: middle;
-    padding-top: 20px;
 }
 
 button{
@@ -103,6 +99,7 @@ button{
     cursor: pointer;
 }
 
+
 p{
     display: inline-block;
 }
@@ -111,5 +108,6 @@ p{
 h1, h2, h3, button{
     margin: 10px 0px;
 }
+
 
 
