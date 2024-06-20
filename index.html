@@ -18,7 +18,7 @@
 
 <body>
 
-
+<!--HEADER-->
     <header>
 
         <img class="logo" src="imgs/baseProjetoCardapio-20240617T165232Z-001/baseProjetoCardapio/imagens/logo.png"
@@ -41,6 +41,11 @@
             </ul>
         </nav>
     </header>
+
+    <!--HEADER-->
+
+
+    <!--Carrinho-->
 
     <div class="offcanvas offcanvas-start bg-secondary" tabindex="-1" id="carrinho" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
@@ -104,16 +109,16 @@
                             <div class="row g-0">
                                 <div class="col-md-4">
                                     <img src="imgs/baseProjetoCardapio-20240617T165232Z-001/baseProjetoCardapio/imagens/bebida01.png "
-                                        class=" width:250px; img-fluid rounded-start" alt="coca-cola">
+                                        class=" width:250px; img-fluid" alt="coca-cola">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body text-start">
                                         <h5 class="text-dark card-title">Coca-Cola</h5>
                                         <h6 class="card-text text-dark">Total: R$5,00</h6>
                                         <div class="d-flex">
-                                            <button class="btn-sm">+</button>
+                                            <button class="btn-sm ">+</button>
                                             <input class="w-75 mx-3" type="number">
-                                            <button class="btn-sm">-</button>
+                                            <button class="btn-sm ">-</button>
                                         </div>
                                     </div>  
                                 </div>
@@ -130,6 +135,11 @@
             </div>
         </div>
     </div>
+
+    <!--Carrinho-->
+    
+
+    <!--Section publicidade-->
 
 <section id="publicidade" class="container w-75">
     <div id="carouselPublicidade" class="carousel slide carousel-fade w-" data-bs-ride="carousel">
@@ -153,9 +163,12 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    
-</section>
 
+      <!--Section publicidade-->
+    
+
+      <!--Section Cardápio-->
+</section>
     <h1>CARDÁPIO DIGITAL</h1>
     <h2 id="hamburguer">Hamburgueres</h2>
 
@@ -189,45 +202,30 @@
         </div>
         <div class="boxTexto">
             <h3>Gourmet Burguer - <strong>R$35,00</strong></h3>
-            <p>O nosso Hambúrguer Gourmet, preparado com um suculento hambúrguer de carne nobre, queijo derretido,
-                cebola caramelizada e baccon. Uma escolha irresistível!</p>
+            <p>
+                O nosso Hambúrguer Gourmet, preparado com um suculento hambúrguer de carne nobre, queijo derretido, cebola caramelizada e baccon. Uma escolha irresistível!
+            </p>
+            <button>Pedir</button>
+            <button  data-bs-toggle="modal" data-bs-target="#exampleModal">Mais detalhes</button>
         </div>
-        <button>Pedir</button>
-        <button  data-bs-toggle="modal" data-bs-target="#exampleModal">Mais detalhes</button>
     </div>
     
     <br>
     <div class="boxProduto">
         <div class="boxImagem">
             <img src="imgs/baseProjetoCardapio-20240617T165232Z-001/baseProjetoCardapio/imagens/burger03.png"
-                alt="Defumado BBQ Burguer" class="imagemProduto">
-        </div>
+                alt="Clássico Anguns Burguer" class="imagemProduto">
 
+        </div>
         <div class="boxTexto">
-            <h3>Defumado BBQ Burguer - <strong>R$29,00</strong></h3>
-            <p>Deixe-se envolver pelo sabor defumado do nosso Hambúrguer BBQ, uma deliciosa combinação de hambúrguer de
-                carne suculenta, queijo cheddar derretido, cebola caramelizada e salada verde.</p>
+            <h3>Defumado BBQ Burger - <strong>R$29,00</strong></h3>
+            <p>
+                Deixe-se envolver pelo sabor defumado do nosso Hambúrguer BBQ, uma deliciosa combinação de hambúrguer de carne suculenta, queijo cheddar derretido, cebola caramelizada e salada verde.
+            </p>
+            <button>Pedir</button>
+            <button  data-bs-toggle="modal" data-bs-target="#exampleModal">Mais detalhes</button>
         </div>
-        <button >Pedir</button>
-        <button  data-bs-toggle="modal" data-bs-target="#exampleModal">Mais detalhes</button>
-    </div>
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title text-dark" id="exampleModalLabel">Mais detalhes</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body text-dark">
-                O Hambúrguer Clássico é uma deliciosa combinação de ingredientes cuidadosamente selecionados para criar uma experiência saborosa e satisfatória. O destaque é o suculento hambúrguer de carne angus, conhecida por sua qualidade e sabor marcante. Ele é complementado com queijo derretido, que adiciona cremosidade e mais um toque de sabor, alface crocante que oferece frescor e textura, e tomate fresco que proporciona um contraste vibrante de sabores. Para unir todos esses elementos, há o molho secreto, que confere um toque especial e único ao hambúrguer. Essa combinação resulta em um prato perfeito para satisfazer sua fome, ideal para momentos de prazer gastronômico.
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-              <button type="button" class="btn btn-primary">Adicionar ao carrinho</button>
-            </div>
-          </div>
-        </div>
-      </div>
+    </div>  
 
     <br>
     
@@ -283,6 +281,104 @@
         </div>
     </div>
     <br>
+
+    <!--Section Cardápio-->
+
+
+    <!--Modal-->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-dark" id="exampleModalLabel">Mais detalhes</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div>
+                  <div id="ingredientesProduto1" class="border row my-3">
+                      <h6>Ingredientes</h6>
+                      <div class="row p-2">                            
+                        <img src="imgs/baseProjetoCardapio-20240617T165232Z-001/baseProjetoCardapio/imagens/carne-de-soja.png" alt="" class="img-fluid col">
+                                                    
+                        <div class="col-8 d-flex align-items-center">
+                            <h6 class="align-middle">Carne Agnus</h6>
+                         </div>    
+                        <button class="col btn btn-danger rounded-pill">Remover</button>                            
+                      </div>    
+                  </div>
+
+                  <div class="border row my-3 d-flex align-items-center">
+                    <h6>Adicionais</h6>
+                    <div class="row p-2">
+                      <h6 class="col-4">Carne Agnus frita no óleo.</h6>
+                      <h6 class="col-2"> R$ 5,00</h6>
+                      <button class="btn btn-warning btn-sm col rounded-pill">+</button>
+                      <input  type="number" value="0" class="col mx-3 text-dark text-center">
+                      <button class="col btn btn-warning btn-sm rounded-pill">-</button>
+                    </div>
+
+                    <div>
+                        <div id="ingredientesProduto1" class="border row my-3">
+                            <h6>Ingredientes</h6>
+                            <div class="row p-2">                            
+                              <img src="imgs/baseProjetoCardapio-20240617T165232Z-001/baseProjetoCardapio/imagens/queijo.png" alt="" class="img-fluid col">
+                                 <div class="col-8 d-flex align-items-center">
+                                    <h6 class="align-middle">Queijo</h6>
+                                 </div>                         
+                              
+                              <button class="col btn btn-danger rounded-pill">Remover</button>                            
+                            </div>    
+                        </div>
+      
+                        <div class="border row my-3 d-flex align-items-center">
+                          <h6>Adicionais</h6>
+                          <div class="row p-2">
+                            <h6 class="col-4">Queijo cheddar derretido.</h6>
+                            <h6 class="col-2"> R$ 5,00</h6>
+                            <button class="btn btn-warning btn-sm col rounded-pill">+</button>
+                            <input  type="number" value="0" class="col mx-3 text-dark text-center">
+                            <button class="col btn btn-warning btn-sm rounded-pill">-</button>
+                          </div>
+                    </div>     
+
+
+                    <div>
+                        <div id="ingredientesProduto1" class="border row my-3">
+                            <h6>Ingredientes</h6>
+                            <div class="row p-2">                            
+                              <img src="imgs/baseProjetoCardapio-20240617T165232Z-001/baseProjetoCardapio/imagens/molho-de-tomate.png" alt="" class="img-fluid col">
+                                 <div class="col-8 d-flex align-items-center">
+                                    <h6 class="align-middle">Molho Secreto</h6>
+                                 </div>                         
+                              
+                              <button class="col btn btn-danger rounded-pill">Remover</button>                            
+                            </div>    
+                        </div>
+      
+                        <div class="border row my-3 d-flex align-items-center">
+                          <h6>Adicionais</h6>
+                          <div class="row p-2">
+                            <h6 class="col-4">Molho especial da casa.</h6>
+                            <h6 class="col-2"> R$ 5,00</h6>
+                            <button class="btn btn-warning btn-sm col rounded-pill">+</button>
+                            <input  type="number" value="0" class="col mx-3 text-dark text-center">
+                            <button class="col btn btn-warning btn-sm rounded-pill">-</button>
+                          </div>
+                    </div>     
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+              <button type="button" class="btn btn-primary">Adicionar ao carrinho</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Modal-->
+      
+
+    
 </body>
 
 
